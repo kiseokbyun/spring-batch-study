@@ -1,4 +1,4 @@
-package com.pentasecurity.isign.batch.study.job;
+package com.ksbyun.batch.study.job;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -16,8 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import com.ksbyun.batch.study.job.CustomItemWriterJobConfiguration;
 
 @RunWith(SpringRunner.class)
 @EnableAutoConfiguration
@@ -38,7 +36,7 @@ public class CustomItemWriterJobConfigurationTest {
         // given
         JobParameters jobParameter = new JobParametersBuilder()
                 .addString("--job.name", "customItemWriterJob")
-                .addString("version", "1")
+                .addString("version", "9")
                 .toJobParameters();
         
         // when
